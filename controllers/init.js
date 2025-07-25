@@ -2,7 +2,7 @@ const fs = require("fs").promises;
 const path = require("path");
 
 async function initRepo() {
-  const reportPath = path.resolve(process.cwd(), ".Satinder_GitHub");
+  const reportPath = path.resolve(process.cwd(), ".satinderGit");
   const commitPath = path.join(reportPath, "commits");
 
   try {
