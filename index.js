@@ -29,7 +29,7 @@ yargs(hideBin(process.argv))
         type: "string",
       });
     },
-    commitChanges
+    (argv) => commitChanges(argv.message)
   )
   .command("push", "Push changes to the remote repository.", {}, pushChanges)
   .command("pull", "Pull changes from the remote repository.", {}, pullChanges)
